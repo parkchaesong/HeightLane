@@ -425,7 +425,7 @@ class Residual(nn.Module):
         out += identity
         return self.relu(out)
         
-class HeightLane(nn.Module):  # BEV-LaneDet
+class HeightLane(nn.Module):  
     # Multi heightmap initialize
     def create_slope_heightmap(self, angle, bev_shape=(200,48)):
         # Convert angle from degrees to radians
