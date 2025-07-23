@@ -10,6 +10,67 @@ HeightLane is a novel approach for lane detection in Bird's-Eye-View (BEV) that 
 
 ---
 
+### 0. Dataset Preparation
+
+#### Step 1: Download OpenLane Dataset
+
+Follow the instructions from the [OpenLane Dataset README](https://github.com/OpenDriveLab/OpenLane/blob/main/data/README.md) to download the full dataset.
+
+After downloading, your directory structure should look like:
+
+```
+<root>/openlane/
+├── images/
+├── training/
+└── validation/
+```
+
+#### Step 2: Download Height Map Data
+
+Download the height map data from the following link:
+[https://147.46.111.77:1402/sharing/jplpr7ROl](https://147.46.111.77:1402/sharing/jplpr7ROl)
+
+Unzip the archive to get a folder named `Openlane_height`. Inside it, you will find folders such as:
+
+```
+Openlane_height/
+├── heightmap_training/
+└── heightmap_validation/
+```
+
+Move these two folders into the previously created `openlane/` folder so that the final structure is:
+
+```
+<root>/openlane/
+├── images/
+├── training/
+├── validation/
+├── heightmap_training/
+└── heightmap_validation/
+```
+
+#### Step 3: Update Configuration
+
+Set the path to your `<root>/openlane` directory in `heightlane_config.py`:
+
+```python
+ROOT_DIR = "/path/to/your/root/openlane"
+```
+
+---
+
+### Directory Structure
+
+To ensure everything works correctly, clone the repositories under a common parent directory like this:
+
+```
+<your_workspace>/
+├── Deformable-DETR/
+└── HeightLane/
+```
+
+---
+
 ### Installation
 
 #### 1. Clone this repository:
@@ -18,10 +79,9 @@ HeightLane is a novel approach for lane detection in Bird's-Eye-View (BEV) that 
 git clone https://github.com/parkchaesong/HeightLane.git
 ```
 
-#### 2. Clone the required dependency (Deformable-DETR) at the parent directory:
+#### 2. Clone the required dependency (Deformable-DETR) **in the same parent directory**:
 
 ```bash
-cd ..
 git clone https://github.com/fundamentalvision/Deformable-DETR.git
 ```
 
@@ -30,7 +90,7 @@ git clone https://github.com/fundamentalvision/Deformable-DETR.git
 Navigate to the operators directory and compile the necessary CUDA operators:
 
 ```bash
-cd ./Deformable-DETR/models/ops
+cd HeightLane/models/ops
 sh ./make.sh
 ```
 
@@ -39,7 +99,7 @@ sh ./make.sh
 Return to the HeightLane root directory and install the required packages:
 
 ```bash
-cd HeightLane
+cd ../../
 pip install -r requirement.txt
 ```
 
@@ -68,5 +128,4 @@ If you use HeightLane in your research, please cite:
 
 ### Acknowledgments
 
-This repository is built upon [BEV-LaneDet](https://github.com/gigo-team/bev_lane_det) and [Deformable-DETR](https://github.com/fundamentalvision/Deformable-DETR). We sincerely thank the authors for their open-source contributions.
-
+This repository is built upon \[BEV-LaneDet]\(h
