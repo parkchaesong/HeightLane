@@ -15,7 +15,7 @@ HeightLane is a novel approach for lane detection in Bird's-Eye-View (BEV) that 
 #### 1. Clone this repository:
 
 ```bash
-git clone https://github.com/[YOUR_GITHUB]/HeightLane.git
+git clone https://github.com/parkchaesong/HeightLane.git
 ```
 
 #### 2. Clone the required dependency (Deformable-DETR) at the parent directory:
