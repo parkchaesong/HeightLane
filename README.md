@@ -30,7 +30,7 @@ git clone https://github.com/fundamentalvision/Deformable-DETR.git
 Navigate to the operators directory and compile the necessary CUDA operators:
 
 ```bash
-cd ./HeightLane/models/ops
+cd ./Deformable-DETR/models/ops
 sh ./make.sh
 ```
 
@@ -39,7 +39,7 @@ sh ./make.sh
 Return to the HeightLane root directory and install the required packages:
 
 ```bash
-cd ../../
+cd HeightLane
 pip install -r requirement.txt
 ```
 
