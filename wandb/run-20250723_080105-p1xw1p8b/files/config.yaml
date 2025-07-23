@@ -1,0 +1,52 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            b7duzcpeejzwmbgcnkot1mea0s1vxj51:
+                codePath: tools/train_openlane.py
+                codePathLocal: tools/train_openlane.py
+                cpu_count: 32
+                cpu_count_logical: 64
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "3776075399168"
+                        used: "1387572535296"
+                email: chase121@snu.ac.kr
+                executable: /usr/bin/python
+                gpu: NVIDIA RTX A6000
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-f675dd1f-c005-1c1c-6de2-5753deae6ccb
+                host: main1
+                memory:
+                    total: "473309315072"
+                os: Linux-5.4.0-216-generic-x86_64-with-glibc2.27
+                program: /home/work/chase/heightlane/tools/train_openlane.py
+                python: CPython 3.8.10
+                root: /home/work/chase/heightlane
+                startedAt: "2025-07-23T08:01:05.086681Z"
+                writerId: b7duzcpeejzwmbgcnkot1mea0s1vxj51
+        m: []
+        python_version: 3.8.10
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 80
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 80
+            "4": 3.8.10
+            "5": 0.21.0
+            "12": 0.21.0
+            "13": linux-x86_64
