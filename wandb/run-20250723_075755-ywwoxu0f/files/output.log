@@ -1,4 +1,0 @@
-Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to /home/work/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth
-100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97.8M/97.8M [00:16<00:00, 6.14MB/s]
-/home/work/.local/lib/python3.8/site-packages/torch/functional.py:445: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2157.)
-  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
