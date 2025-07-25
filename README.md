@@ -116,11 +116,13 @@ Detailed instructions for training and evaluation coming soon.
 If you use HeightLane in your research, please cite:
 
 ```
-@inproceedings{YourPaper2025,
-  title={HeightLane: Incorporating Height Information for Improved BEV Lane Detection},
-  author={Your Name and Co-authors},
-  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year={2025}
+@InProceedings{Park_2025_WACV,
+    author    = {Park, Chaesong and Seo, Eunbin and Lim, Jongwoo},
+    title     = {HeightLane: BEV Heightmap Guided 3D Lane Detection},
+    booktitle = {Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {February},
+    year      = {2025},
+    pages     = {1692-1701}
 }
 ```
 
