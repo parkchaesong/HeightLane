@@ -107,7 +107,29 @@ pip install -r requirement.txt
 
 ### Usage
 
-Detailed instructions for training and evaluation coming soon.
+Download the pretrained model from the following link:
+https://drive.google.com/file/d/1ifqL9R5EL6DqMw_99RgA_6HxUreURSdj/view?usp=sharing
+
+Place the downloaded file as: **heightlane/ckpt.pth**
+
+✅ Validation
+Once the dataset and pretrained checkpoint are ready, run:
+
+```bash
+python tools/val_openlane.py
+```
+
+This will evaluate the model on the OpenLane validation set using the pretrained checkpoint.
+
+
+🚀 Training
+To train HeightLane from scratch:
+
+```bash
+python tools/train_openlane.py
+```
+
+
 
 ---
 
